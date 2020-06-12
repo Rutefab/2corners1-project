@@ -1,7 +1,11 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
-  document.getElementById("dropdown-content").style.display = 'block';
+  const state = document.querySelector(".dropdown-content").style.visibility = 'visible';
+}
+
+function myFunctionOut() {
+  const state = document.querySelector(".dropdown-content").style.visibility = 'hidden';
 }
 
 function func(){
@@ -11,7 +15,15 @@ function func(){
 // Close the dropdown if the user clicks outside of it
 const btn = document.getElementById("btn");
 
-btn.addEventListener('click', myFunction);
+const dropbox = document.querySelector(".dropdown-content");
+
+btn.addEventListener('mouseover', myFunction);
+
+btn.addEventListener('mouseout', myFunctionOut);
+
+dropbox.addEventListener('mouseover', myFunction);
+
+dropbox.addEventListener('mouseout', myFunctionOut);
 
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
