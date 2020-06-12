@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container {
+    min-height:100%;
+    position:relative;
+}
+
+@media (max-width: 600px) {
+    #navigation div {
+        display: block;
+        float: none;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #navigation .nav-right {
+        float: left !important;
+        text-align: center !important;
+    }
+
+    #footer div {
+        display: block;
+        float: none;
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+#navigation {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navigation div {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navigation .logo {
+    width: 20%
+}
+
+#navigation .logo a i {
+    margin-right: 10px;
+}
+
+#navigation .nav-middle {
+    width: 50%;
+    text-align: center;
+}
+
+#navigation .nav-right {
+    width: 20%;
+    text-align: right;
+}
+
+#navigation .nav-right a {
+    margin-left: 20px;
+}
+
+/* Dropdown */
+
+/* .dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}*/
+
+#dropdown-content {
+    display: none !important;
+    position: absolute;
+    background-color: #000000;
+    color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    right: 0;
+    z-index: 1;
+}
+  
+.show {display: block !important;}
+
+#main {
+    height: 100%;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 20%;
+    height: 550px; /* only for demonstration, should be removed */
+    background: #f1f1f1;
+    padding: 20px;
+    border-right: 5px solid black;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    height: 30px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black !important;
+}
+  
+article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 550px; /* only for demonstration, should be removed */
+}
+  
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+      border-right: 0px;
+    }
+}
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#footer div {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+#footer .footer-one {
+    width: 20%;
+}
+
+#footer .footer-two {
+    width: 60%;
+}
+
+#footer .footer-three {
+    width: 20%;
+    font-size: large;
+}
+
+.fa-caret-up {
+    color: yellow;
+}
