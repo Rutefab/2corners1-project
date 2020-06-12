@@ -1,7 +1,7 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
-  document.getElementById("dropdown-content").style.display.block;
+  document.getElementById("dropdown-content").style.display = 'block';
 }
 
 function func(){

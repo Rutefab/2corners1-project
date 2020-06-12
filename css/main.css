@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -98,7 +98,7 @@ body {
 nav {
     float: left;
     width: 20%;
-    height: 550px; /* only for demonstration, should be removed */
+    height: 100vh; /* only for demonstration, should be removed */
     background: #f1f1f1;
     padding: 20px;
     border-right: 5px solid black;
@@ -125,7 +125,7 @@ article {
     padding: 20px;
     width: 80%;
     background-color: #f1f1f1;
-    height: 550px; /* only for demonstration, should be removed */
+    height: 100vh; /* only for demonstration, should be removed */
 }
   
 /* Clear floats after the columns */
@@ -144,7 +144,7 @@ section:after {
 }
 
 #footer {
-    position:absolute;
+    position:relative;
     bottom:0;
     width:100%;
     overflow: hidden;
