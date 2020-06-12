@@ -1,4 +1,4 @@
-/* When the user clicks on the button, 
+/* When the user move the mouse over the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   const state = document.querySelector(".dropdown-content").style.visibility = 'visible';
